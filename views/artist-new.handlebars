@@ -1,0 +1,44 @@
+<h2>New Artist</h2>
+<p>Search you libaray add add a new artist to your Tunr libary.</p>
+<p>https://developer.spotify.com/web-api/console/get-search-item/</p>
+<h3>Search for a New Artsit</h3>
+    <form id="searchForm" action="/artist/new" method="post">
+        <ul class="woofu">
+            <li class="form-group">
+                <label class="col-sm-3 control-label required" for="q">Artist Name</label>
+                <input class="form-control stored-field" id="q" name="q" placeholder="Artist Name" type="text">
+            </li>
+            <li class="form-group">
+                <label class="col-sm-3 control-label required" for="id">Artist ID</label>
+                <input class="form-control stored-field" id="id" name="id" placeholder="Artist ID" type="text">
+            </li>
+            <li class="form-group">
+                <input type="submit" value="Submit" />
+            </li>
+        </ul>
+    </form>
+
+
+<h3>Current artsit</h3>
+    {{#if artistName}}
+    <ul id="artistList">
+      {{#each artistName}}
+          <li> <a href="/artist/{{id}}">  {{artistName}}</a>
+    	  </li>
+      {{/each}}
+      </ul>
+{{/if}}
+
+<fieldset> <legend>Cheet sheet</legend>
+<pre>
+    Shakira: 0EmeFodog0BfCgMzAIvKQp
+    Raul Morel: 1QWyHipaYoAe7nVLyro0BO
+    Queen: 1dfeR4HaWDbWqFHLkxsg1d
+    Michael Jackson: 3fMbdgg4jU18AjLCKBhRSm
+    Janet Jackson: 4qwGe91Bz9K2T8jXTZ815W
+    Marc Anthony: 4wLXwxDeWQ8mtUIRPxGiD6
+    Scott Bradlee's Postmodern Jukebox: 5HYNPEO2NNBONQkp3Mvwvc
+    Beyoncé: 6vWDO969PvNqNYHIOW5v0m
+    Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e
+</pre>
+</fieldset>

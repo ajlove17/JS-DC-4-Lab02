@@ -1,0 +1,16 @@
+<h2>Edit Artsit</h2>
+<form id="searchForm" action="/artist/edit" method="post">
+    <ul class="woofu">
+        <li class="form-group">
+            <label class="col-sm-3 control-label required" for="q">Artist Name</label>
+            <input class="form-control stored-field" id="q" name="q" value="{{artistName}}" type="text">
+        </li>
+        <li class="form-group">
+            <label class="col-sm-3 control-label required" for="id">Artist ID</label>
+            <input class="form-control stored-field" id="id" name="id" value="{{id}}" type="text">
+        </li>
+        <li class="form-group">
+            <input type="submit" value="Submit" />
+        </li>
+    </ul>
+</form>

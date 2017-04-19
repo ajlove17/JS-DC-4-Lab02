@@ -1,0 +1,11 @@
+<p>explore our artists</p>
+
+{{#if artistName}}<dl id="artistList">
+  {{#each artistName}}
+      <dt> <a href="/artist/{{id}}"><img src="/img/default-img.jpg"  alt=""/>  <span>{{artistName}}</span></a>
+	  </dt>
+    <dd><a href="/artist/edit/{{id}}">Edit {{artistName}}</a> </dd>
+  {{/each}}
+
+</dl>
+    {{/if}}

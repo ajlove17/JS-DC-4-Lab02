@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tunř</title>
+    <link rel="stylesheet" href="/style.css">
+      <!--<script type="text/javascript" src="/script.js"></script>-->
+  </head>
+  <body id="{{currentPG}}">
+    <header>
+      <h1><a href="/">Tunř</a></h1>
+    </header>
+	<nav><a href="#content" id="accessibility">Skip Navigation</a><ul>
+	<li id="artist-nav"><span >artist</span>
+		<ul>
+		<li><a href="/artist/edit/">edit artsit</a></li>
+		<li><a href="/artist/new">new artsit</a></li>
+		</ul>
+	</li>
+	<li id="song-nav"><span >song</span>
+			<ul>
+			<li><a href="/song/edit/0">edit song</a></li>
+			</ul>
+	</li>
+	</ul></nav>
+<div class="content">
+    {{{ body }}}
+</div>
+    <footer>
+      <p class="copyright">
+        Copyright <script>document.write(new Date().getFullYear())</script>
+      </p>
+    </footer>
+
+  </body>
+</html>

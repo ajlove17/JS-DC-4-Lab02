@@ -1,0 +1,92 @@
+html, body {height: 100%; }
+html, body, header h1, nav ul, nav li, #artistList dt, #artistList dd, ul.woofu, .woofu li {padding: 0; margin: 0;}
+ul.woofu, .woofu li, nav li {list-style: none;}
+body {
+  font-family:verdana;
+  font-style: 1 em:
+
+}
+
+header, nav, .content {  padding:.5em 1% .75em;}
+header {
+  background-color: rgba(102, 163, 211, .75);
+}
+header h1{font-size: 2em}
+header a:after{
+  content: "\266a ";
+  float: left;
+  margin-right: 1%;
+  color: rgba(250, 250, 250, .75);
+}
+nav {
+  background-color: rgba(102, 163, 211, .5);
+  text-transform: capitalize;
+}
+header a, nav a {text-decoration: none; padding: .1em 1%; display: block;}
+header a:hover, nav a:hover {text-decoration: underline;}
+nav a:active {text-decoration:overline underline;}
+nav:after {content: " ";
+display: block;
+clear: both;}
+nav li { display: block; float: left; width: 45%; }
+nav li:first-child{ margin-right: 5%;}
+nav li ul {border-top: 1px inset #fff; padding-left: 15%}
+nav li li {width: auto; float: none; margin-right: 0;}
+nav li span {display: inline-block; padding: .1em 1%;}
+a:link{color:blue}
+a:visited {color: navy}
+a:hover {color: grey}
+a:active, a:focus {color:teal}
+
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top:2em;
+  margin-bottom:2em;
+  color: rgb(102, 163, 211);
+  border-top: 1px dotted rgb(102, 163, 211);
+}
+
+#accessibility{position: absolute; top: -1000px;
+  display:block; background-color: rgb(102, 163, 211); text-align: center; }
+#accessibility:focus, #accessibility:active {position: static; }
+#accessibility:before {content: " \25be "; display: inline-block; font-size: 2em;}
+
+#artistList dt, #artistList dt span { display: block;}
+#artistList dt  {margin-bottom: .25em; margin-top: 1em;}
+#artistList dt img {max-width: 100%; display: inline-block;}
+#artistList dt:first-child{margin-top: 0;}
+#artistList dd, #artistList dt span{ margin-left:0; margin-bottom: .5em}
+
+.woofu li {margin-bottom: 1em;}
+.woofu label {display: block;}
+
+@media (min-width: 800px) {
+header, nav, .content  {
+    padding:1em 3%;
+}
+header, nav {float: left; width: 19%;}
+header {min-height: 4.25em; }
+header h1 {font-size: 2.75em;}
+nav {
+width: 69%;
+}
+nav li span {padding-left:5%;}
+.content {clear: both; margin-top: .75em}
+/*nav {
+  float: left;
+  width:25%;
+height:calc(100% - 8.75em); /header = 3, footer = 5/
+}
+nav li {
+  float:none;
+  margin-top: .5em;
+}
+.content {margin-left: 30%}
+}*/
+#artistList dt:first-child {margin-top: 1em;}
+#artistList dt, #artistList dd { width: 20%; margin-right: 5%; float: left; margin-top: 1em;}
+#artistList dd { margin-left: -25%; margin-top: -.5em; background-color: rgba(250, 250, 250, .75); font-size: .8em; text-align:right}
+#artistList dt:nth-child(10n-0){clear: left;  margin-right: 0%}
+}

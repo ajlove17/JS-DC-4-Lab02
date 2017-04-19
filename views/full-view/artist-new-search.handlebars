@@ -1,0 +1,23 @@
+<h2>New Artist</h2>
+<p>search our Tunr Libaray add add a new artist to your personal libary.</p>
+<h3>Search for a New Artsit</h3>
+    <form id="searchForm" action="/artist/new" method="post">
+        <ul class="woofu">
+            <li class="form-group">
+                <label class="col-sm-3 control-label required" for="q">Artist Name</label>
+                <input class="form-control stored-field" id="q" name="q" placeholder="Artist Name" type="text">
+            </li>
+            <li class="form-group">
+                <input type="submit" value="Submit" id="js-submitNewArtist"/>
+            </li>
+        </ul>
+    </form>
+  <h3>Choose a New Artsit to add</h3>
+    <div id="searchResults">
+      <ul id="artistList">
+
+            <li>  {{artistName}}<a href="/artist/{{artistID}}">add Artist</a>
+          </li>
+
+        </ul>
+    </div>
